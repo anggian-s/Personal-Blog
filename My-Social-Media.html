@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+    <title>My Social Media</title>
+    <link rel="icon" href="./website_project_img/rimuru_tempest_confident_enhanced_by_kalizakiz_dgeq77r-fullview.jpg" type="image/x-icon">
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: gray;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(./website_project_img/1335810.png) repeat center center fixed;
+            background-size: cover;
+        }
+
+        #vanta {
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main {
+            position: relative;
+            margin-top: -1em;
+        }
+
+        header {
+            margin-top: 0.5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8em;
+        }
+
+        header > a,
+        header a > img {
+            border-radius: 50%;
+        }
+
+        header a > img {
+            width: 6em;
+            height: 6em;
+            border: 1px solid #fff;
+            box-shadow: rgb(28 32 93 / 24%) 0px 2px 80px 0px;
+            transition: transform 1s;
+            transform: translateY(-10px);
+        }
+
+        header > h1 {
+            display: inline-block;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-radius: 1em;
+            background-color: #000a;
+            color: #fff;
+            padding: 0.3em 0.6em;
+            border: 1px solid #fff;
+            backdrop-filter: blur(10px) saturate(260%) contrast(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(260%) contrast(180%);
+            transform: translateY(-10px);
+        }
+
+        header > h1 > a {
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+        }
+
+        ul > li {
+            width: 100%;
+            background-color: #fff8;
+            backdrop-filter: blur(10px) saturate(260%) contrast(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(260%) contrast(180%);
+            border-radius: 10em;
+            padding: 1em 3em;
+            box-shadow: rgb(28 32 93 / 24%) 0px 2px 80px 0px;
+            transition: background 300ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            border: 1px solid white;
+            text-align: center;
+            margin: 0.4em 0;
+        }
+
+        ul > li:hover {
+            background-color: #01c8cf58;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #01c8cf;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 5em;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #01a8a1;
+        }
+    </style>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <a href="https://www.instagram.com/axtz_s/">
+                <img src="./website_project_img/rimuru_tempest_confident_enhanced_by_kalizakiz_dgeq77r-fullview.jpg" alt="avatar logo"/>
+            </a>
+            <h1>
+                <a href="https://www.instagram.com/axtz_s/">@axtz_s</a>
+            </h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/axtz_s/">
+                    <img src="./website_project_img/Instagram_logo_2016.png" alt="instagram logo" width="20" />
+                    Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/anggian-sirait-3bb25b29a/">
+                    <img src="./website_project_img/LinkedIn_icon.svg.png" alt="linkedin logo" width="20" />
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@axtz_s">
+                    <img src="./website_project_img/YouTube_full-color_icon_(2017).svg.png" alt="youtube logo" width="20" />
+                    Youtube
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@axtz_s?lang=id-ID">
+                    <img src="./website_project_img/tiktok-icon-logo-1CB398A1BD-seeklogo.png" alt="tiktok logo" width="20" />
+                    Tiktok
+                </a>n
+            </li>
+            <li>
+                <a href="https://x.com/axtz_s">
+                    <img src="./website_project_img/X_logo_2023_original.svg.png" alt="x logo" width="20" />
+                    X
+                </a>
+            </li>
+        </ul>
+        <a href="javascript:history.back()" class="back-button">Back</a>
+    </main>
+</body>
+</html>
