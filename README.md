@@ -1,2 +1,2 @@
 # Website-Project
-Simple Functional Website
+Simple Functional Blog
